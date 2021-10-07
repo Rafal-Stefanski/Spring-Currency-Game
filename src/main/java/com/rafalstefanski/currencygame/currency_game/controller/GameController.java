@@ -31,9 +31,4 @@ public class GameController {
         return "redirect:/currency_game-gui";
     }
 
-//    @GetMapping("/resetgame")
-//    public String resetGame() {
-//        gameService.reset();
-//        return "/";
-//    }
 }
