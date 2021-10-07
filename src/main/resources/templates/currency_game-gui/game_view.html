@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess Currency Rate Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<div style="text-align: center; ">
+    <h2 style="font-style: revert">Guess current rate of USD in PLN</h2> <br>
+    <p>format: "0.00"</p>
+
+    <form th:action="@{/currency_game-gui/check}" th:object="${currency}" class="align-items-center" method="get">
+        <input th:field="*{usdInput}" type="number" step="0.01" placeholder=" enter dollar value ">
+        <button class="" type="submit">take a guess</button>
+    </form>
+    <br>
+    <span th:if="${currency.getUsdValueInPln() != currency.usdInput}" th:text="${currency.getStatus()}">  </span>
+    <span th:unless="${currency.getUsdValueInPln() != currency.usdInput}" th:text="${currency.getStatus()} + ' By the '+ ${currency.counter}+ ' time. Bravo!'"> </span>
+
+    <br>
+<!--    <p style="text-align: center; margin-top: 20px">-->
+<!--        <button  th:action="@{/currency_game-gui/resetgame}" type="button" class="btn btn-outline-dark">Reset</button>-->
+<!--&lt;!&ndash;        <a href="/resetgame">&ndash;&gt;-->
+<!--&lt;!&ndash;            </a>&nbsp;&ndash;&gt;-->
+<!--        <a href="/">-->
+<!--            <button type="button" class="btn btn-outline-primary">Back to home page</button>-->
+<!--        </a>-->
+<!--    </p>-->
+</div>
+</body>
+</html>
