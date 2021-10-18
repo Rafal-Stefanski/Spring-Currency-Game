@@ -16,10 +16,16 @@
         <button class="" type="submit">take a guess</button>
     </form>
     <br>
-    <span th:if="${currency.getUsdValueInPln() != currency.usdInput}" th:text="${currency.getStatus()}">  </span>
-    <span th:unless="${currency.getUsdValueInPln() != currency.usdInput}" th:text="${currency.getStatus()} + ' By the '+ ${currency.counter}+ ' time. Bravo!'"> </span>
-
+    <span th:if="${currency.getUsdValueInPln() != currency.usdInput}" th:text="${currency.getStatus()}"></span>
     <br>
+    <span th:if="${currency.getUsdValueInPln() != currency.usdInput}">
+        <img th:src="@{/img/1dolar.gif}"/>
+    </span>
+    <span th:unless="${currency.getUsdValueInPln() != currency.usdInput}" th:text="${currency.getStatus()} + ' By the '+ ${currency.counter}+ ' time. Bravo!'"> </span>
+    <br>
+    <span th:unless="${currency.getUsdValueInPln() != currency.usdInput}">
+        <img style="margin-top: 40px; height: 250px" th:src="@{/img/machine.gif}"/>
+    </span>
 </div>
 </body>
 </html>
