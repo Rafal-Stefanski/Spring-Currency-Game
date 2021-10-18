@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("/currency_game-gui")
+@RequestMapping("/currency-game")
 public class GameController {
 
     private GameService gameService;
@@ -22,13 +22,13 @@ public class GameController {
     @GetMapping
     public String getGame(Model model) {
         model.addAttribute("currency", gameService.getCurrencyGame());
-        return "currency_game-gui/game_view";
+        return "game-gui/game-view";
     }
 
     @GetMapping("/check")
     public String getCheck(@RequestParam("usdInput") double usdInput) {
         gameService.check(usdInput);
-        return "redirect:/currency_game-gui";
+        return "redirect:/currency-game";
     }
 
 }

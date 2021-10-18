@@ -11,7 +11,7 @@
     <h2 style="font-style: revert">Guess current rate of USD in PLN</h2> <br>
     <p>format: "0.00"</p>
 
-    <form th:action="@{/currency_game-gui/check}" th:object="${currency}" class="align-items-center" method="get">
+    <form th:action="@{/currency-game/check}" th:object="${currency}" class="align-items-center" method="get">
         <input th:field="*{usdInput}" type="number" step="0.01" placeholder=" enter dollar value ">
         <button class="" type="submit">take a guess</button>
     </form>
