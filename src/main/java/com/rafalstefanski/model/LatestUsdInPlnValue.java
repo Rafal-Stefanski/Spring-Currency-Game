@@ -1,5 +1,5 @@
 
-package com.rafalstefanski.currencygame.currency_game.model;
+package com.rafalstefanski.model;
 
 import com.fasterxml.jackson.annotation.*;
 

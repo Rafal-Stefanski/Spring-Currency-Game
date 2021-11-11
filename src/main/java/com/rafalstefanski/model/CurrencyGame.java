@@ -1,4 +1,4 @@
-package com.rafalstefanski.currencygame.currency_game.model;
+package com.rafalstefanski.model;
 
 public class CurrencyGame {
     private double usdValueInPln;

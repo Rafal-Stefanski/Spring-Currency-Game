@@ -1,7 +1,7 @@
-package com.rafalstefanski.currencygame.currency_game.service;
+package com.rafalstefanski.service;
 
-import com.rafalstefanski.currencygame.currency_game.model.CurrencyGame;
-import com.rafalstefanski.currencygame.currency_game.model.LatestUsdInPlnValue;
+import com.rafalstefanski.model.CurrencyGame;
+import com.rafalstefanski.model.LatestUsdInPlnValue;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 

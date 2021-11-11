@@ -1,6 +1,6 @@
-package com.rafalstefanski.currencygame.currency_game.controller;
+package com.rafalstefanski.controller;
 
-import com.rafalstefanski.currencygame.currency_game.service.GameService;
+import com.rafalstefanski.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
