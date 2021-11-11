@@ -7,14 +7,14 @@ endpoint: http://localhost:8080/currency-game
 * [X] Pobierz aktualny kursy walut. W momencie, kiedy gracz wejdzie do gry wyświetla mu się losowo wybrana waluta, której kurs względem złotówki musi odgadnąć.
   Np. Aplikacja: Wprowadź aktualną kurs USD uwzględniając 2 miejsca po przecinku.
 
-
+***
 #### screen shots:
 
 ![screen shot](https://github.com/Rafal-Stefanski/Spring-Currency-Game/blob/master/src/main/resources/static/screen_shot_01.png)
 
-![screen shot](.\src\main\resources\static\screen_shot_01.png)
+[comment]: <> (![screen shot]&#40;.\src\main\resources\static\screen_shot_01.png&#41;)
 
 ![screen shot](https://github.com/Rafal-Stefanski/Spring-Currency-Game/blob/master/src/main/resources/static/screen_shot_02.png)
 
-![screen shot](.\src\main\resources\static\screen_shot_02.png)
+[comment]: <> (![screen shot]&#40;.\src\main\resources\static\screen_shot_02.png&#41;)
 
