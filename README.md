@@ -1,11 +1,10 @@
-### Spring Currency Game App - using http client
+### Spring Currency Game App - using http client  :dollar: 
 
 endpoint: http://localhost:8080/currency-game
 
-#### Task 3 – Currency game (gra walutowa :dollar: )
+#### Description
 
-* [X] Pobierz aktualny kursy walut. W momencie, kiedy gracz wejdzie do gry wyświetla mu się losowo wybrana waluta, której kurs względem złotówki musi odgadnąć.
-  Np. Aplikacja: Wprowadź aktualną kurs USD uwzględniając 2 miejsca po przecinku.
+* [X] Guess current USD value in PLN.
 
 ***
 #### screen shots:
