@@ -1,5 +1,5 @@
 ### Spring Currency Game App - using http client  :dollar: 
-
+<img align="right" src="https://badges.pufler.dev/visits/Rafal-Stefanski/Spring-Currency-Game">
 endpoint: http://localhost:8080/currency-game
 
 #### Description
